@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - TechPro Solutions</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/careers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section (Same as index.html) -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="TechPro Solutions Logo">
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="careers.html" class="nav-link">Careers</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Careers Hero Section -->
+    <section class="careers-hero">
+        <div class="careers-hero-content">
+            <h1>Join Our Team</h1>
+            <p>Build the Future of Technology with Us</p>
+        </div>
+    </section>
+
+    <!-- Why Join Us Section -->
+    <section class="why-join-us">
+        <div class="container">
+            <h2>Why Join TechPro Solutions?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Innovation First</h3>
+                    <p>Work with cutting-edge technologies and shape the future of software</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Great Culture</h3>
+                    <p>Join a collaborative team that values creativity and growth</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Career Growth</h3>
+                    <p>Clear career progression paths and continuous learning opportunities</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-gift"></i>
+                    <h3>Amazing Benefits</h3>
+                    <p>Competitive salary, health insurance, and flexible work options</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Openings Section -->
+    <section class="current-openings">
+        <div class="container">
+            <h2>Current Openings</h2>
+            <div class="jobs-grid">
+                <div class="job-card">
+                    <h3>Senior Java Developer</h3>
+                    <span class="job-type">Full Time</span>
+                    <p>Lead the development of enterprise Java applications using Spring Boot and microservices architecture.</p>
+                    <ul class="requirements">
+                        <li>7+ years of Java experience</li>
+                        <li>Spring Boot expertise</li>
+                        <li>Microservices architecture</li>
+                    </ul>
+                    <button class="apply-btn" onclick="showApplicationForm('Senior Java Developer')">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <h3>Full Stack Developer</h3>
+                    <span class="job-type">Full Time</span>
+                    <p>Develop end-to-end web applications using React, Node.js, and modern JavaScript frameworks.</p>
+                    <ul class="requirements">
+                        <li>5+ years full stack experience</li>
+                        <li>React.js expertise</li>
+                        <li>Node.js backend development</li>
+                    </ul>
+                    <button class="apply-btn" onclick="showApplicationForm('Full Stack Developer')">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <h3>DevOps Engineer</h3>
+                    <span class="job-type">Full Time</span>
+                    <p>Implement and maintain CI/CD pipelines, cloud infrastructure, and automation tools.</p>
+                    <ul class="requirements">
+                        <li>4+ years DevOps experience</li>
+                        <li>AWS/Azure expertise</li>
+                        <li>Docker & Kubernetes</li>
+                    </ul>
+                    <button class="apply-btn" onclick="showApplicationForm('DevOps Engineer')">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <h3>UI/UX Designer</h3>
+                    <span class="job-type">Full Time</span>
+                    <p>Create intuitive and engaging user interfaces for web and mobile applications.</p>
+                    <ul class="requirements">
+                        <li>4+ years UI/UX experience</li>
+                        <li>Figma & Adobe XD</li>
+                        <li>User research skills</li>
+                    </ul>
+                    <button class="apply-btn" onclick="showApplicationForm('UI/UX Designer')">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <h3>Mobile Developer</h3>
+                    <span class="job-type">Full Time</span>
+                    <p>Develop native iOS/Android applications using Swift and Kotlin.</p>
+                    <ul class="requirements">
+                        <li>4+ years mobile development</li>
+                        <li>iOS/Android expertise</li>
+                        <li>Cross-platform development</li>
+                    </ul>
+                    <button class="apply-btn" onclick="showApplicationForm('Mobile Developer')">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <h3>QA Engineer</h3>
+                    <span class="job-type">Full Time</span>
+                    <p>Ensure software quality through automated testing and quality assurance processes.</p>
+                    <ul class="requirements">
+                        <li>3+ years QA experience</li>
+                        <li>Selenium & TestNG</li>
+                        <li>API testing</li>
+                    </ul>
+                    <button class="apply-btn" onclick="showApplicationForm('QA Engineer')">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form Modal -->
+    <div id="applicationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Apply for <span id="jobTitle"></span></h2>
+            <form id="applicationForm" onsubmit="submitApplication(event)">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" required>
+                    <label for="phone">Phone</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="experience" required></textarea>
+                    <label for="experience">Relevant Experience</label>
+                </div>
+                <div class="form-group">
+                    <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+                    <label for="resume">Upload Resume (PDF, DOC, DOCX)</label>
+                </div>
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@techprosolutions.com</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Address: 123 Tech Street, Digital City</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 TechPro Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+    <script src="../js/careers.js"></script>
+</body>
+</html>
