@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - TechPro Solutions</title>
+    <title>About Us - Savi Software Solutions</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/services.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Header Section (Same as index.html) -->
-    <header class="header">
+   <header class="header">
         <nav class="navbar">
             <div class="logo">
-                <img src="../assets/images/logo.png" alt="TechPro Solutions Logo">
+                <img src="../images/savi-logo.png" alt="Savi Software Solutions Logo">
             </div>
             <div class="nav-toggle" id="navToggle">
                 <span></span>
@@ -22,7 +23,7 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="about.html" class="nav-link active">About Us</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="careers.html" class="nav-link">Careers</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -39,33 +40,41 @@
     </section>
 
     <!-- Company Overview -->
-    <section class="company-overview">
-        <div class="container">
-            <h2>Who We Are</h2>
-            <div class="overview-grid">
-                <div class="overview-content">
-                    <p>TechPro Solutions is a leading software development company specializing in enterprise-level solutions, web applications, and digital transformation. With over a decade of experience, we've helped countless businesses achieve their technological goals.</p>
-                    <div class="stats-container">
-                        <div class="stat-item">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Projects Delivered</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">100+</span>
-                            <span class="stat-label">Enterprise Clients</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Tech Experts</span>
-                        </div>
+    <section id="about" class="about-section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-content">
+                <h2>About <span>SAVI Software Solutions</span></h2>
+                <p class="highlight">Founded in 2023, we deliver excellence in software development and IT services.</p>
+                <div class="about-text">
+                    <p>SAVI Software Solutions was founded with the core mission of providing High-Quality design, Human Resources Management System, Payroll Processing System, School and Campus Management, Inventory Management System, e-Commerce, ERP, Web portal design &amp; Hosting, Asset Management, Custom Application Development, Technology Consulting and IT infrastructure services.</p>
+                    <p>We take on projects both big and small, work and really enjoy hammering out problems and getting results. We love taking on challenging projects that require full-on content strategy, thoughtful design, demanding development, and ongoing marketing.</p>
+                    <p>Headquartered and fully equipped development center in Salem, we are a strong team with professionals experts, who work with integrity and passion to deliver world class IT solutions.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Custom Solutions</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Expert Team</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Quality Assurance</span>
                     </div>
                 </div>
-                <div class="overview-image">
-                    <img src="../assets/images/about-overview.jpg" alt="Our Office">
+                </div>
+            <div class="about-image">
+                <div class="image-stack">
+                    <img src="../images/team-colloboration.jpg" alt="Our Office" class="img-1">
+                    <img src="../images/office.jpg" alt="Our Team" class="img-2">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Add this section after the company-overview section and before the timeline-section -->
     <section class="mission-vision">
@@ -90,39 +99,11 @@
     </section>
 
     <!-- Timeline Section -->
-    <section class="timeline-section">
+    <section class="cta-section">
         <div class="container">
-            <h2>Our Journey</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="year">2010</div>
-                    <div class="content">
-                        <h3>Founded</h3>
-                        <p>Started as a small software consulting firm</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="year">2015</div>
-                    <div class="content">
-                        <h3>Major Expansion</h3>
-                        <p>Launched enterprise software division</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="year">2020</div>
-                    <div class="content">
-                        <h3>Global Reach</h3>
-                        <p>Expanded operations internationally</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="year">2025</div>
-                    <div class="content">
-                        <h3>Innovation Hub</h3>
-                        <p>Established AI & ML research center</p>
-                    </div>
-                </div>
-            </div>
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Let's discuss how our software solutions can help you achieve your goals</p>
+            <a href="contact.html" class="cta-button">Get Started</a>
         </div>
     </section>
 
@@ -130,9 +111,11 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Contact Us</h4>
-                <p>Email: info@techprosolutions.com</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Address: 123 Tech Street, Digital City</p>
+                <p><i class="fas fa-envelope"></i>tohr@savisoftwaresolution.com</p>
+                <p><i class="fas fa-phone"></i>0427-4511685</p>
+                <p><i class="fas fa-map-marker-alt"></i>  No: U5, RBT Mall, Underground Floor,
+
+Meyyanur Byepass Road, Salem - 636 004.</p>
             </div>
             <div class="footer-section">
                 <h4>Quick Links</h4>
@@ -147,16 +130,19 @@
                 <h4>Follow Us</h4>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg></a>
                     <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 TechPro Solutions. All rights reserved.</p>
+            <p>© 2025 Savi Software Solutions. All rights reserved.</p>
         </div>
     </footer>
+
 
     <script src="../js/main.js"></script>
 </body>

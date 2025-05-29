@@ -2,7 +2,7 @@
 .about-hero {
     height: 60vh;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                url('../assets/images/about-hero.jpg') center/cover;
+                url('../images/about-us.jpg') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +71,7 @@
 /* Mission and Vision Section */
 .mission-vision {
     padding: 5rem 0;
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+    background: linear-gradient(135deg, #29bb67, #0a526a);
     color: white;
 }
 
@@ -176,15 +176,6 @@
     margin: 0.5rem 0;
 }
 
-.social-links {
-    margin-top: 1rem;
-}
-
-.social-links a {
-    color: #3498db;
-    margin: 0 0.5rem;
-    font-size: 1.2rem;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechPro Solutions - Excellence in Software Development</title>
+    <title>Savi Software Solutions - Excellence in Software Development</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -12,7 +12,7 @@
     <header class="header">
         <nav class="navbar">
             <div class="logo">
-                <img src="../assets/images/logo.png" alt="TechPro Solutions Logo">
+                <img src="../images/savi-logo.png" alt="Savi Software Solutions Logo">
             </div>
             <div class="nav-toggle" id="navToggle">
                 <span></span>
@@ -20,7 +20,7 @@
                 <span></span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
                 <li><a href="about.html" class="nav-link">About Us</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="careers.html" class="nav-link">Careers</a></li>
@@ -30,57 +30,196 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Innovative Software Solutions for Your Business</h1>
-            <p>Expert development in Java, Web Applications, and Enterprise Solutions</p>
-            <a href="#services" class="cta-button">Explore Our Services</a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-laptop-code"></i>
-                <h3>Enterprise Java Solutions</h3>
-                <p>Custom enterprise-level Java applications for your business needs</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-globe"></i>
-                <h3>Web Development</h3>
-                <p>Scalable and responsive web applications using cutting-edge technologies</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-cogs"></i>
-                <h3>Software Consulting</h3>
-                <p>Strategic technology consulting for optimal business solutions</p>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-carousel">
+        <!-- Slide 1 -->
+        <div class="carousel-slide active">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h1>Innovative Software Solutions</h1>
+                    <p>Transform your business with cutting-edge technology and expert development</p>
+                    <div class="slide-buttons">
+                        <a href="#services" class="cta-button primary">Our Services</a>
+                        <a href="#contact" class="cta-button secondary">Get Started</a>
+                    </div>
+                </div>
+                <div class="slide-image">
+                    <img src="../images/software-development.jpg" alt="Software Development" style="width:100%;border-radius:20px;">
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial-slider">
-            <div class="testimonial">
-                <img src="../assets/images/testimonial1.jpg" alt="Client 1">
-                <p>"TechPro Solutions delivered an exceptional enterprise solution that transformed our business operations."</p>
-                <h4>Sarah Johnson</h4>
-                <span>CTO, Digital Innovations</span>
+        <!-- Slide 2 -->
+        <div class="carousel-slide">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h1>Enterprise Solutions</h1>
+                    <p>Custom applications and digital transformation for your enterprise needs</p>
+                    <div class="slide-buttons">
+                        <a href="#services" class="cta-button primary">Learn More</a>
+                        <a href="#contact" class="cta-button secondary">Contact Us</a>
+                    </div>
+                </div>
+                <div class="slide-image">
+                    <img src="../images/enterprise-solution.jpg" alt="Enterprise Solutions" style="width:100%;border-radius:20px;">
+                </div>
             </div>
-            <!-- More testimonials will be loaded dynamically -->
         </div>
-    </section>
 
+        <!-- Slide 3 -->
+        <div class="carousel-slide">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h1>Expert Development Team</h1>
+                    <p>Dedicated professionals delivering excellence in every project</p>
+                    <div class="slide-buttons">
+                        <a href="#about" class="cta-button primary">About Us</a>
+                        <a href="#contact" class="cta-button secondary">Join Us</a>
+                    </div>
+                </div>
+                <div class="slide-image">
+                    <img src="../images/teamwork.jpg" alt="Team Collaboration" style="width:100%;border-radius:20px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Navigation -->
+        <button class="carousel-btn prev" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button class="indicator active" aria-label="Slide 1"></button>
+            <button class="indicator" aria-label="Slide 2"></button>
+            <button class="indicator" aria-label="Slide 3"></button>
+        </div>
+    </div>
+</section>
+ <!-- About Us Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-content">
+                <h2>About <span>SAVI Software Solutions</span></h2>
+                <p class="highlight">Founded in 2023, we deliver excellence in software development and IT services.</p>
+                <div class="about-text">
+                    <p>SAVI Software Solutions was founded with the core mission of providing High-Quality design, Human Resources Management System, Payroll Processing System, School and Campus Management, Inventory Management System, e-Commerce, ERP, Web portal design & Hosting, Asset Management, Custom Application Development, Technology Consulting and IT infrastructure services.</p>
+                    <p>We take on projects both big and small, work and really enjoy hammering out problems and getting results. We love taking on challenging projects that require full-on content strategy, thoughtful design, demanding development, and ongoing marketing.</p>
+                    <p>Headquartered and fully equipped development center in Salem, we are a strong team with professionals experts, who work with integrity and passion to deliver world class IT solutions.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Custom Solutions</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Expert Team</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Quality Assurance</span>
+                    </div>
+                </div>
+                </div>
+            <div class="about-image">
+                <div class="image-stack">
+                    <img src="../images/team-colloboration.jpg" alt="Our Office" class="img-1">
+                    <img src="../images/office.jpg" alt="Our Team" class="img-2">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- Services Section -->
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+        <a href="services.html#software-dev" class="service-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Software Development</h3>
+            <p>Transforming ideas into innovative software solutions that drive business success.</p>
+            <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="services.html#web-dev" class="service-card">
+            <i class="fas fa-globe"></i>
+            <h3>Web Development</h3>
+            <p>Scalable and responsive web applications using cutting-edge technologies</p>
+            <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="services.html#consult-dev" class="service-card">
+            <i class="fas fa-cogs"></i>
+            <h3>Software Consulting</h3>
+            <p>Strategic technology consulting for optimal business solutions</p>
+            <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
+        </a>
+    </div>
+</section>
+
+<!-- Contact us Section -->
+<!-- Add this section before the footer -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Get In Touch</h2>
+        <p class="section-desc">Have a project in mind? Let's discuss how we can help.</p>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Visit Us</h3>
+                    <p>No: U5, RBT Mall, Underground Floor</p>
+                    <p>Meyyanur Byepass Road, Salem, Tamil Nadu, India</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>0427-4511685</p>
+                    <p>Mon - Fri, 9:00 AM - 6:00 PM</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>tohr@savisoftwaresolution.com</p>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Contact Us</h4>
-                <p>Email: info@techprosolutions.com</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Address: 123 Tech Street, Digital City</p>
+                <p><i class="fas fa-envelope"></i>tohr@savisoftwaresolution.com</p>
+                <p><i class="fas fa-phone"></i>0427-4511685</p>
+                <p><i class="fas fa-map-marker-alt"></i>  No: U5, RBT Mall, Underground Floor,
+
+Meyyanur Byepass Road, Salem - 636 004.</p>
             </div>
             <div class="footer-section">
                 <h4>Quick Links</h4>
@@ -95,14 +234,16 @@
                 <h4>Follow Us</h4>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg></a>
                     <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 TechPro Solutions. All rights reserved.</p>
+            <p>© 2025 Savi Software Solutions. All rights reserved.</p>
         </div>
     </footer>
 

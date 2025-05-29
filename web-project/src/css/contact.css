@@ -2,7 +2,7 @@
 .contact-hero {
     height: 40vh;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                url('../assets/images/contact-hero.jpg') center/cover;
+                url('../images/contact-hero.jpg') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
